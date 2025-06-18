@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - 0todeploy</title>
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- JS include loader -->
   <script src="js/include.js" defer></script>
-  <!-- AOS Animation CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -16,31 +19,31 @@
 
   <!-- Hero Section -->
   <main class="hero">
-    <img src="images/logo.png" alt="0todeploy Logo" class="0img" />
-    <h1>Launch the Future with 0todeploy</h1>
-    <p>From Zero to Deployment — We craft, code, and deploy your digital vision.</p>
-    <div class="btn-group" style="margin-top: 2rem;">
+    <img src="images/logo.png" alt="0todeploy Logo" class="logo-img" data-aos="fade-down" />
+    <h1 data-aos="fade-up">Launch the Future with 0todeploy</h1>
+    <p data-aos="fade-up" data-aos-delay="200">From Zero to Deployment — We craft, code, and deploy your digital vision.</p>
+    <div class="btn-group" data-aos="zoom-in" data-aos-delay="400">
       <a href="services.html">See Our Services</a>
       <a href="contact.html">Get a Quote</a>
     </div>
   </main>
 
-  <!-- Highlights -->
+  <!-- Highlights Section -->
   <section style="text-align: center; padding: 4rem 2rem;">
-    <h2 style="color: #ff6b00;">Why Choose Us?</h2>
-    <p style="max-width: 700px; margin: auto;">
+    <h2 style="color: #ff6b00;" data-aos="fade-up">Why Choose Us?</h2>
+    <p style="max-width: 700px; margin: auto;" data-aos="fade-up" data-aos-delay="100">
       We don’t just build — we launch. From logo to full-scale web apps, we take your ideas to production with creative energy, automation, and blazing-fast results.
     </p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
-      <div class="card">
+      <div class="card" data-aos="flip-left">
         <h3>Creative Branding</h3>
         <p>Stand out with bold, beautiful, and meaningful designs.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-up">
         <h3>Full Stack Web</h3>
         <p>From static to complex apps — we handle it all.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-right">
         <h3>API & Automation</h3>
         <p>We automate your workflows and deploy scalable APIs.</p>
       </div>
@@ -50,5 +53,8 @@
   <!-- Load Footer -->
   <div data-include="footer.html"></div>
 
+  <!-- Animation Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script> <!-- optional if you want to move AOS.init here -->
 </body>
 </html>
