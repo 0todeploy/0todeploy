@@ -21,7 +21,9 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
+  max-width: 180px;
+  object-fit: contain
 }
 
 .main-nav a {
