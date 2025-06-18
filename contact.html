@@ -17,20 +17,32 @@
     <section style="padding: 3rem 2rem; text-align: center;">
       <h1>Hire Us</h1>
       <p style="margin-bottom: 2rem;">We’d love to work on your next big idea. Fill out the form below and we’ll get back to you soon!</p>
-      <form style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="What do you want us to build?" required></textarea>
+      
+      <form 
+        action="https://formspree.io/f/meokzpol" 
+        method="POST"
+        style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="What do you want us to build?" required></textarea>
+
+        <!-- Spam filter field -->
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="thankyou.html" />
+
         <button type="submit">Send Request</button>
       </form>
     </section>
   </main>
- <!-- Load Footer -->
+
+  <!-- Footer Include -->
   <div data-include="footer.html"></div>
 
   <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/include.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
