@@ -7,7 +7,7 @@ body {
 }
 
 /* Header */
-header {
+.site-header {
   background-color: #121212;
   padding: 1rem 2rem;
   display: flex;
@@ -15,22 +15,32 @@ header {
   align-items: center;
 }
 
-header img {
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
   height: 50px;
 }
 
-nav a {
+.main-nav a {
   color: #ff6b00;
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: bold;
 }
 
-nav a:hover {
+.main-nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero */
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
 .hero h1 {
   color: #ff6b00;
   font-size: 3rem;
@@ -56,7 +66,7 @@ nav a:hover {
   background: #ff8515;
 }
 
-/* Cards (used in Services) */
+/* Service Cards */
 .card {
   background: #1a1a1a;
   padding: 2rem;
