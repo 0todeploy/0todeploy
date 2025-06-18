@@ -75,6 +75,15 @@ body {
   background: #ff8515;
 }
 
+/* Services Section */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
 /* Service Cards */
 .card {
   background: #1a1a1a;
