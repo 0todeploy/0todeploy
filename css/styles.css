@@ -16,6 +16,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  z-index: 1000;
 }
 
 .logo-link {
@@ -37,6 +38,7 @@ body {
   color: #ff6b00;
   font-size: 1.8rem;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .main-nav {
