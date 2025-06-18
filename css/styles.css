@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0.5rem 0;
+  flex-grow: 1; /* Adds spacing between logo and toggle */
 }
 
 .logo {
@@ -167,11 +168,16 @@ footer {
 
 /* Responsive Layout */
 @media (max-width: 768px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .menu-toggle {
     display: block;
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
+    position: static;
+    margin-left: auto;
   }
 
   .main-nav {
@@ -191,11 +197,6 @@ footer {
     padding: 1rem;
     border-top: 1px solid #1f1f1f;
     margin: 0;
-  }
-
-  .site-header {
-    flex-direction: column;
-    text-align: center;
   }
 
   .hero h1 {
