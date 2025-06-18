@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services - 0todeploy</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="js/include.js" defer></script>
 </head>
 <body>
@@ -15,33 +16,41 @@
   <!-- Services Content -->
   <main class="services">
     <section style="padding: 3rem 2rem; text-align: center;">
-      <h1>Our Services</h1>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
-        <div class="card">
+      <h1 data-aos="fade-up">Our Services</h1>
+      <p data-aos="fade-up" data-aos-delay="150" style="max-width: 750px; margin: auto;">
+        At 0todeploy, we bring your digital vision to life — whether it's a logo, a full-blown application, or a backend automation engine.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 3rem;">
+        <div class="card" data-aos="zoom-in">
           <h3>Logo & Branding</h3>
           <p>Modern and bold visual identity that speaks your brand story.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
           <h3>Website Development</h3>
           <p>Mobile-friendly, fast, and stunning websites built to deploy.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
           <h3>API & Automation</h3>
           <p>Build smart workflows and backend tools to supercharge your business.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
           <h3>Poster & Banner Design</h3>
           <p>Creative designs for social media, marketing, and events.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
           <h3>Web App Deployment</h3>
           <p>From MVP to production — we deploy what we build, securely and fast.</p>
         </div>
       </div>
     </section>
   </main>
+
   <!-- Footer Include -->
   <div data-include="footer.html"></div>
 
+  <!-- Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
