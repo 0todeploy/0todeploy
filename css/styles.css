@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0.5rem 0;
-  flex-grow: 1; /* Adds spacing between logo and toggle */
+  flex-grow: 1;
 }
 
 .logo {
@@ -52,12 +52,14 @@ body {
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a:focus {
   color: #ffffff;
   text-decoration: underline;
+  outline: none;
 }
 
 /* Hero Section */
@@ -86,11 +88,13 @@ body {
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.btn-group a:hover {
+.btn-group a:hover,
+.btn-group a:focus {
   background: #ff8515;
+  outline: none;
 }
 
 /* Services Section */
@@ -150,11 +154,13 @@ form button {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-form button:hover {
+form button:hover,
+form button:focus {
   background: #ff8515;
+  outline: none;
 }
 
 /* Footer */
@@ -189,7 +195,7 @@ footer {
     text-align: center;
   }
 
-  .main-nav.active {
+  .main-nav.nav-visible {
     display: flex;
   }
 
@@ -218,5 +224,30 @@ footer {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+  }
+}
+
+/* Focus Outlines for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px dashed #ff6b00;
+  outline-offset: 2px;
+}
+
+/* Optional: Print Styles */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+}
+
+/* Optional: Dark Mode Preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0f0f0f;
+    color: #cccccc;
   }
 }

@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - 0todeploy</title>
+
+  <title>Contact 0todeploy – Let's Build Your Vision</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Ready to launch? Contact 0todeploy to start building your next website, app, or automation tool. Fast, reliable, and visionary development." />
+  <meta name="keywords" content="0todeploy contact, hire 0todeploy, web development inquiry, project quote, logo request, api automation contact" />
+  <meta name="author" content="0todeploy" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact 0todeploy – Let's Build Your Vision" />
+  <meta property="og:description" content="Reach out and let's turn your idea into a deployed product. Websites, apps, automation & more." />
+  <meta property="og:image" content="https://www.0todeploy.com/images/logo.svg" />
+  <meta property="og:url" content="https://www.0todeploy.com/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Include -->
   <script src="js/include.js" defer></script>
 </head>
 <body>
@@ -22,6 +43,7 @@
         action="https://formspree.io/f/meokzpol" 
         method="POST"
         style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;"
+        aria-label="Contact form"
       >
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
@@ -43,6 +65,9 @@
 
   <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
