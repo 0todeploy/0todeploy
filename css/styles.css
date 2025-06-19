@@ -5,6 +5,8 @@ body {
   background-color: #0f0f0f;
   color: #cccccc;
   scroll-behavior: smooth;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Header */
@@ -42,6 +44,7 @@ body {
   z-index: 1001;
 }
 
+/* Nav */
 .main-nav {
   display: flex;
   align-items: center;
@@ -52,17 +55,18 @@ body {
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
   color: #ffffff;
   text-decoration: underline;
-  outline: none;
+  outline: 2px dashed #ff6b00;
+  outline-offset: 2px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -88,16 +92,17 @@ body {
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .btn-group a:hover,
 .btn-group a:focus {
   background: #ff8515;
-  outline: none;
+  outline: 2px dashed #ff6b00;
+  outline-offset: 2px;
 }
 
-/* Services Section */
+/* Services */
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +111,6 @@ body {
   margin-top: 3rem;
 }
 
-/* Service Cards */
 .card {
   background: #1a1a1a;
   padding: 2rem;
@@ -154,13 +158,14 @@ form button {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 form button:hover,
 form button:focus {
   background: #ff8515;
-  outline: none;
+  outline: 2px dashed #ff6b00;
+  outline-offset: 2px;
 }
 
 /* Footer */
@@ -172,7 +177,7 @@ footer {
   color: #666;
 }
 
-/* Responsive Layout */
+/* Responsive */
 @media (max-width: 768px) {
   .site-header {
     flex-direction: row;
@@ -182,7 +187,6 @@ footer {
 
   .menu-toggle {
     display: block;
-    position: static;
     margin-left: auto;
   }
 
@@ -227,7 +231,7 @@ footer {
   }
 }
 
-/* Focus Outlines for Accessibility */
+/* Focus Highlights */
 a:focus,
 button:focus,
 input:focus,
@@ -236,7 +240,7 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* Optional: Print Styles */
+/* Print-Friendly */
 @media print {
   body {
     background: #fff;
@@ -244,7 +248,7 @@ textarea:focus {
   }
 }
 
-/* Optional: Dark Mode Preference */
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
     background: #0f0f0f;
