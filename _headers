@@ -1,0 +1,34 @@
+/*
+
+  # Protect against MIME-type attacks
+  X-Content-Type-Options: nosniff
+
+  # Prevent clickjacking
+  X-Frame-Options: DENY
+
+  # Block XSS attacks
+  X-XSS-Protection: 1; mode=block
+
+  # Enforce HTTPS (HSTS)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Hide referrer data
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Content Security Policy (CSP)
+  Content-Security-Policy: 
+    default-src 'self'; 
+    script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com; 
+    style-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; 
+    img-src 'self' data:; 
+    font-src 'self' https://cdnjs.cloudflare.com; 
+    frame-ancestors 'none';
+
+  # Cross-Origin Resource Policy
+  Cross-Origin-Resource-Policy: same-origin
+
+  # Cross-Origin Embedder Policy
+  Cross-Origin-Embedder-Policy: require-corp
+
+  # Cross-Origin Opener Policy
+  Cross-Origin-Opener-Policy: same-origin
