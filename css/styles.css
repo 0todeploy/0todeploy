@@ -188,6 +188,15 @@ body {
   box-sizing: border-box;
 }
 
+.contact-section form input[name="_gotcha"] {
+  display: none !important;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .contact-section form button {
   background: #ff6b00;
   color: #0f0f0f;
