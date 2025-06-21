@@ -29,8 +29,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- Include -->
   <script src="js/include.js" defer></script>
 </head>
 <body>
@@ -39,16 +37,18 @@
   <div data-include="header.html"></div>
 
   <!-- Contact Section -->
-  <main class="contact">
-    <section style="padding: 3rem 2rem; text-align: center;">
-      <h1>Hire Us</h1>
-      <p style="margin-bottom: 2rem;">We’d love to work on your next big idea. Fill out the form below and we’ll get back to you soon!</p>
+  <main class="contact-page">
+    <section class="contact-section">
+      <h1 data-aos="fade-up">Hire Us</h1>
+      <p data-aos="fade-up" data-aos-delay="100">We’d love to work on your next big idea. Fill out the form below and we’ll get back to you soon!</p>
       
       <form 
         action="https://formspree.io/f/meokzpol" 
         method="POST"
-        style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem;"
+        class="contact-form"
         aria-label="Contact form"
+        data-aos="zoom-in"
+        data-aos-delay="200"
       >
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
@@ -70,9 +70,7 @@
 
   <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
-  <script>
-    AOS.init({ once: true });
-  </script>
+  <script>AOS.init({ once: true });</script>
   <script src="js/main.js"></script>
 </body>
 </html>

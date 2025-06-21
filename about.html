@@ -37,40 +37,42 @@
   <div data-include="header.html"></div>
 
   <!-- About Content -->
-  <main class="about" style="padding: 4rem 2rem; text-align: center;">
-    <h1 data-aos="fade-up">About 0todeploy</h1>
-    <p data-aos="fade-up" data-aos-delay="100" style="max-width: 800px; margin: auto; font-size: 1.2rem;">
-      Hey there! I'm <strong>Archith</strong>, founder of <strong>0todeploy</strong> — a launchpad for creators and businesses.
-      My goal is to transform raw ideas into powerful digital products that not only look great but work flawlessly across platforms.
-    </p>
-    <p data-aos="fade-up" data-aos-delay="200" style="margin-top: 2rem;">
-      Our work isn’t just code — it’s creativity, care, and complete launch support.
-    </p>
+  <main class="about-page">
+    <section class="about-section">
+      <h1 data-aos="fade-up">About 0todeploy</h1>
+      <p data-aos="fade-up" data-aos-delay="100" class="about-lead">
+        Hey there! I'm <strong>Archith</strong>, founder of <strong>0todeploy</strong> — a launchpad for creators and businesses.
+        My goal is to transform raw ideas into powerful digital products that not only look great but work flawlessly across platforms.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="200" class="about-sub">
+        Our work isn’t just code — it’s creativity, care, and complete launch support.
+      </p>
 
-    <h2 data-aos="fade-up" style="color: #ff6b00; margin-top: 4rem;">Our Vision</h2>
-    <p data-aos="zoom-in" data-aos-delay="300" style="max-width: 700px; margin: auto;">
-      To empower creators, startups, and businesses with powerful digital tools and reliable design & development — all from one single launchpad.
-    </p>
+      <h2 class="section-heading" data-aos="fade-up">Our Vision</h2>
+      <p class="about-vision" data-aos="zoom-in" data-aos-delay="300">
+        To empower creators, startups, and businesses with powerful digital tools and reliable design & development — all from one single launchpad.
+      </p>
 
-    <h2 data-aos="fade-up" style="color: #ff6b00; margin-top: 4rem;">Milestones</h2>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
-      <div class="card" data-aos="flip-left">
-        <h3>2018</h3>
-        <p>Started building digital solutions, tools, and platforms from the ground up.</p>
+      <h2 class="section-heading" data-aos="fade-up">Milestones</h2>
+      <div class="why-choose-cards" data-aos="fade-up" data-aos-delay="400">
+        <div class="card" data-aos="flip-left">
+          <h3>2018</h3>
+          <p>Started building digital solutions, tools, and platforms from the ground up.</p>
+        </div>
+        <div class="card" data-aos="flip-up">
+          <h3>2022</h3>
+          <p>Founded 0todeploy to launch brands, products, and experiences.</p>
+        </div>
+        <div class="card" data-aos="flip-right">
+          <h3>2024</h3>
+          <p>Delivered full-stack solutions, automation tools, and scalable APIs worldwide.</p>
+        </div>
       </div>
-      <div class="card" data-aos="flip-up">
-        <h3>2022</h3>
-        <p>Founded 0todeploy to launch brands, products, and experiences.</p>
-      </div>
-      <div class="card" data-aos="flip-right">
-        <h3>2024</h3>
-        <p>Delivered full-stack solutions, automation tools, and scalable APIs worldwide.</p>
-      </div>
-    </div>
 
-    <blockquote data-aos="fade-in" style="margin-top: 4rem; font-style: italic; color: #aaa;">
-      “Don’t wait for the right time. Build it, deploy it, and launch your future.”
-    </blockquote>
+      <blockquote data-aos="fade-in" class="about-quote">
+        “Don’t wait for the right time. Build it, deploy it, and launch your future.”
+      </blockquote>
+    </section>
   </main>
 
   <!-- Footer Include -->
@@ -78,9 +80,7 @@
 
   <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
-  <script>
-    AOS.init({ once: true });
-  </script>
+  <script>AOS.init({ once: true });</script>
   <script src="js/include.js"></script>
   <script src="js/main.js"></script>
 

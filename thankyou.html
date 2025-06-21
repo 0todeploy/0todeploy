@@ -6,15 +6,16 @@
 
   <title>Thank You – Message Received | 0todeploy</title>
 
-  <!-- SEO Meta -->
+  <!-- SEO & Meta -->
   <meta name="description" content="Thank you for reaching out to 0todeploy. Your message has been received. We'll contact you soon!" />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="author" content="0todeploy" />
-  <!-- SEC Meta -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Security Meta -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Thank You – Message Received | 0todeploy" />
@@ -29,18 +30,18 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  
-  <!-- Include Script -->
+
+  <!-- Include Header/Footer -->
   <script src="js/include.js" defer></script>
 </head>
 <body>
 
-  <!-- Header Include -->
+  <!-- Header -->
   <div data-include="header.html"></div>
 
-  <!-- Thank You Section -->
-  <main class="hero" style="text-align: center; padding: 5rem 2rem;">
-    <h1 data-aos="fade-up">Thank You!</h1>
+  <!-- Thank You Message -->
+  <main class="hero" data-aos="fade-up">
+    <h1>Thank You!</h1>
     <p data-aos="fade-up" data-aos-delay="200">
       Your message has been received. We’ll get back to you shortly.
     </p>
@@ -50,14 +51,12 @@
     </div>
   </main>
 
-  <!-- Footer Include -->
+  <!-- Footer -->
   <div data-include="footer.html"></div>
 
   <!-- JS Libraries -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
-  <script>
-    AOS.init({ once: true });
-  </script>
+  <script>AOS.init({ once: true });</script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Our Services – 0todeploy</title>
 
   <!-- SEO Meta -->
@@ -26,12 +25,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
 
-  <!-- Styles & Icons -->
+  <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
-  <!-- Include Script -->
   <script src="js/include.js" defer></script>
 </head>
 <body>
@@ -39,41 +36,41 @@
   <!-- Header Include -->
   <div data-include="header.html"></div>
 
-  <!-- Services Content -->
+  <!-- Services Section -->
   <main class="services">
-    <section data-aos="fade-up" style="padding: 3rem 2rem; text-align: center;">
+    <section class="section" data-aos="fade-up">
       <h1>Our Services</h1>
-      <p data-aos="fade-up" data-aos-delay="150" style="max-width: 750px; margin: auto;">
+      <p class="section-center" data-aos="fade-up" data-aos-delay="150">
         At <strong>0todeploy</strong>, we bring your digital vision to life — whether it's a logo, a full-blown application, or a backend automation engine.
       </p>
 
-      <div class="services-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
+      <div class="services-grid">
         <div class="card" data-aos="zoom-in" data-aos-delay="0">
-          <i class="fas fa-palette card-icon" style="font-size: 2rem; color: #ff6b00;"></i>
+          <i class="fas fa-palette card-icon"></i>
           <h3>Logo & Branding</h3>
           <p>Modern and bold visual identity that speaks your brand story.</p>
         </div>
 
         <div class="card" data-aos="zoom-in" data-aos-delay="100">
-          <i class="fas fa-globe card-icon" style="font-size: 2rem; color: #ff6b00;"></i>
+          <i class="fas fa-globe card-icon"></i>
           <h3>Website Development</h3>
           <p>Mobile-friendly, fast, and stunning websites built to deploy.</p>
         </div>
 
         <div class="card" data-aos="zoom-in" data-aos-delay="200">
-          <i class="fas fa-cogs card-icon" style="font-size: 2rem; color: #ff6b00;"></i>
+          <i class="fas fa-cogs card-icon"></i>
           <h3>API & Automation</h3>
           <p>Build smart workflows and backend tools to supercharge your business.</p>
         </div>
 
         <div class="card" data-aos="zoom-in" data-aos-delay="300">
-          <i class="fas fa-bullhorn card-icon" style="font-size: 2rem; color: #ff6b00;"></i>
+          <i class="fas fa-bullhorn card-icon"></i>
           <h3>Poster & Banner Design</h3>
           <p>Creative designs for social media, marketing, and events.</p>
         </div>
 
         <div class="card" data-aos="zoom-in" data-aos-delay="400">
-          <i class="fas fa-rocket card-icon" style="font-size: 2rem; color: #ff6b00;"></i>
+          <i class="fas fa-rocket card-icon"></i>
           <h3>Web App Deployment</h3>
           <p>From MVP to production — we deploy what we build, securely and fast.</p>
         </div>
@@ -84,12 +81,11 @@
   <!-- Footer Include -->
   <div data-include="footer.html"></div>
 
-  <!-- JS Libraries -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ once: true });
   </script>
   <script src="js/main.js"></script>
-
 </body>
 </html>
