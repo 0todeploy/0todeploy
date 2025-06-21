@@ -102,6 +102,29 @@ body {
   outline-offset: 2px;
 }
 
+/* Why Choose Section */
+.why-choose {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.why-choose-heading {
+  color: #ff6b00;
+}
+
+.why-choose-text {
+  max-width: 700px;
+  margin: auto;
+}
+
+.why-choose-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 /* Services */
 .services-grid {
   display: flex;
